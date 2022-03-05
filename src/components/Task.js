@@ -11,7 +11,7 @@ const Task = ({title, description, id, status:_status, onRemoveTask}) => {
 
     useEffect(() => {
         getOperations(id, setOperations)
-    }, [id]);
+    }, []);
 
     const handleAddOperation = () => {
         setOperationForm(prevState => !prevState)
@@ -63,8 +63,7 @@ const Task = ({title, description, id, status:_status, onRemoveTask}) => {
                 </div>
             </div>
 
-            <Operations
-                taskID={id}
+            <Operations taskID={id}
                 form={operationForm}
                 setForm={setOperationForm}
                 operations={operations}

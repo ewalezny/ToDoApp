@@ -69,6 +69,7 @@ export const updateTask = (id, task, successCallback) => {
                 successCallback(data.data)
             }
         })
+        .catch(err => console.log(err))
 }
 
 /**

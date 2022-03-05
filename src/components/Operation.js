@@ -49,6 +49,7 @@ const Operation = ({description, id, onRemoveOperation, timeSpent: _timeSpent, s
                             className="form-control"
                             placeholder="Spent time in minutes"
                             style={{width: "12rem"}}
+                            value={timeSpentInput}
                             onChange={e => setTimeSpentInput(e.target.value)}/>
                         <div className="input-group-append">
                             <button className="btn btn-outline-success"><i className="fas fa-save"/></button>

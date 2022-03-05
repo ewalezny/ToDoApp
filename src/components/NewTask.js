@@ -7,12 +7,12 @@ const NewTask = ({onAddNewTask}) => {
 
     const handleAddNewTask = e => {
         e.preventDefault();
-        const newTask = {
+        const task = {
             title,
             description,
             status: "open"
         }
-        createTask(newTask, onAddNewTask);
+        createTask(task, onAddNewTask);
     }
 
     return (
